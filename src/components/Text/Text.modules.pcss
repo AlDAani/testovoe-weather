@@ -1,0 +1,98 @@
+@import 'vars/variables';
+
+.headline {
+  font-weight: $fnt_bold;
+  font-size: $fnt_size_xxx_large;
+  line-height: $line_height_xxx_large;
+  letter-spacing: $kerning6;
+}
+
+.title {
+  font-weight: $fnt_bold;
+  font-size: $fnt_size_xx_large;
+  line-height: $line_height_xx_large;
+  letter-spacing: $kerning5;
+}
+
+@define-mixin subtitle {
+  font-size: $fnt_size_x_large;
+  line-height: $line_height_x_large;
+  letter-spacing: $kerning1;
+}
+
+.subtitle-bold {
+  @mixin subtitle;
+  font-weight: $fnt_bold;
+}
+
+.subtitle-medium {
+  @mixin subtitle;
+  font-weight: $fnt_medium;
+}
+
+@define-mixin body {
+  font-size: $fnt_size_large;
+  line-height: $line_height_large;
+  letter-spacing: $kerning2;
+}
+
+.body-regular {
+  @mixin body;
+}
+
+.body-medium {
+  font-weight: $fnt_medium;
+  @mixin body;
+}
+
+.bodySemiBold {
+  font-weight: $fnt_semi_bold;
+  @mixin body;
+}
+
+@define-mixin line {
+  font-size: $fnt_size_normal;
+  line-height: $line_height_normal;
+  letter-spacing: $kerning3;
+}
+
+.lineRegular {
+  @mixin line;
+}
+
+.lineMedium {
+  font-weight: $fnt_medium;
+  @mixin line;
+}
+
+.lineSemiBold {
+  font-weight: $fnt_semi_bold;
+  @mixin line;
+}
+
+@define-mixin label {
+  font-size: $fnt_size_small;
+  line-height: $line_height_small;
+  letter-spacing: $kerning4;
+}
+
+.label-regular {
+  @mixin label;
+}
+
+.label-medium {
+  font-weight: $fnt_medium;
+  @mixin label;
+}
+
+.labelSemiBold {
+  font-weight: $fnt_semi_bold;
+  @mixin label;
+}
+
+.overline {
+  font-size: $fnt_size_tiny;
+  line-height: $line_height_normal;
+  letter-spacing: $kerning7;
+  text-transform: uppercase;
+}

@@ -1,0 +1,6 @@
+@import 'vars/variables';
+
+.item {
+  display: flex;
+  grid-gap: $spacing3;
+}

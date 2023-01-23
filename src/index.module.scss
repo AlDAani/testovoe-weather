@@ -1,0 +1,10 @@
+@import 'vars/variables';
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: $fnt_size_normal;
+}

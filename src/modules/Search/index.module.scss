@@ -1,0 +1,23 @@
+@import 'vars/variables';
+
+.search {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: $spacing6;
+  input[type=search] {
+    font-size: 1rem;
+    width: 100%;
+    padding: $spacing3;
+  }
+}
+
+.data {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: $spacing3;
+  grid-gap: $spacing8;
+}
